@@ -1,3 +1,4 @@
+
 // Wheel class that defines the properties of a wheel
 class Wheel {
   // Declare properties of the Wheel class using private access modifier
@@ -19,6 +20,11 @@ class Wheel {
   get getTireBrand(): string {
     return this.tireBrand;
   }
+  toString(): string {
+    return `${this.diameter} inch with a ${this.tireBrand} tire`;
+  }
+
+
 }
 
 // Export the Wheel class

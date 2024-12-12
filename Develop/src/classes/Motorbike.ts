@@ -50,10 +50,22 @@ constructor(
   // =========>Override the printDetails method from the Vehicle, calls the printDetails method of the parent class and log the details of the Motorbike<==========
  override printDetails(): void {
   super.printDetails();
-    console.log( `Vin: ${this.vin} \n Make:${this.make} \n Model: ${this.model} \n Year: ${this.year} \n Weight: ${this.weight} \n TopSpeed: ${this.topSpeed} \n Color: ${this.color} \n Wheels: ${this.wheels}`)
-
+    console.log( `Vin#: ${this.vin}`);
+    console.log( `Make:${this.make}`);
+    console.log( `Model: ${this.model}`);
+    console.log( `Year: ${this.year}`);
+    console.log( `Weight: ${this.weight}`);
+    console.log( `TopSpeed: ${this.topSpeed}`);
+    console.log( `Color: ${this.color}`);
+    console.log( `Wheels: ${this.wheels}`);
+    
+    console.log(
+      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
+    );
   }
-
 }
 
 // Export the Motorbike class as the default export
