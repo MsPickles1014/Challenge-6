@@ -5,7 +5,7 @@
 This project is a Command Line Interface (CLI) application for managing a fleet of vehicles. It allows users to create different types of vehicles (Cars, Trucks, and Motorbikes), interact with them, and perform various actions.
 
 ## Features
-  *Create Vehicles: Add new vehicles to your fleet (Car, Truck, or Motorbike).
+  ** Create Vehicles: Add new vehicles to your fleet (Car, Truck, or Motorbike).
 
 Select Vehicles: Choose a vehicle from the existing fleet to perform actions on.
 
