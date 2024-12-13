@@ -1,44 +1,110 @@
 # 08 TypeScript and OOP: Vehicle Builder
 
-## Your Task
+## Discription
 
-Your task is to update an existing TypeScript command-line application that builds and uses cars to have additional options for motorbikes and trucks. The application prompts the user to create a new vehicle or select an existing vehicle. After going through the creation process or the selection process, the user is able to perform certain actions with the selected vehicle. The user is returned to the actions menu after each action until they decide to exit the application.
+This project is a Command Line Interface (CLI) application for managing a fleet of vehicles. It allows users to create different types of vehicles (Cars, Trucks, and Motorbikes), interact with them, and perform various actions.
 
-Because this application won't be deployed, you'll need to provide a link to a walkthrough video that demonstrates its functionality. You'll need to submit a link to the video **and** add it to the README of your project.
+## Features
+  *Create Vehicles: Add new vehicles to your fleet (Car, Truck, or Motorbike).
 
-Refer to the [video submission guide on the Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
+Select Vehicles: Choose a vehicle from the existing fleet to perform actions on.
 
-### User Story
+Perform Actions:
 
-```md
-AS a developer
-I WANT to update an existing application to include additional vehicle types
+Print details of the selected vehicle.
+
+Start, accelerate, decelerate, and stop vehicles.
+
+Turn vehicles left or right, or put them in reverse.
+
+Perform specific actions like towing (for Trucks) or wheelies (for Motorbikes).
+
+Dynamic Prompts: The CLI dynamically updates based on available vehicles and their capabilities.
+
+Installation
+Prerequisites
+Node.js (version 14 or later)
+
+Steps
+Clone the repository:
+
+git clone <repository_url>
+cd <repository_directory>
+Install dependencies:
+
+npm install
+Run the application:
+
+node index.js
+Usage
+Start the CLI
+con
+
+Creating a Vehicle
+Select the type of vehicle (Car, Truck, or Motorbike).
+
+Enter details for the vehicle, such as color, make, model, year, weight, and top speed.
+
+If creating a Truck, specify its towing capacity.
+
+Selecting a Vehicle
+Choose an existing vehicle from the fleet to perform actions. The vehicle's details will be displayed in the selection prompt.
+
+Performing Actions
+After selecting a vehicle, you can:
+
+Print its details.
+
+Start or stop the vehicle.
+
+Adjust the speed (accelerate or decelerate).
+
+Perform specialized actions:
+
+Towing: Trucks can tow another vehicle from the fleet.
+
+Wheelies: Motorbikes can perform wheelies.
+
+Exiting
+Choose the "Exit" option at any point to quit the application.
+
+Project Structure
+index.js: Entry point for the application.
+
+Cli.js: Main CLI logic for managing vehicles and user interactions.
+
+Car.js, Truck.js, Motorbike.js: Classes representing different vehicle types.
+
+Vehicle.js: Base class for all vehicles.
+
+Extending the Application
+To add new vehicle types or actions:
+
+Create a new class extending the Vehicle base class.
+
+Update the Cli.js file to include prompts and logic for the new vehicle type.
+
+Add any specialized actions to the performActions method.
+
+Dependencies
+inquirer: Used for interactive CLI prompts.
+
+Install dependencies using:
+
+## Installation
+
+`
+Using Typescript, run npm start in index.ts Integrated Terminal. Follow input prompts to add new vehicle or select eupdate an existing application to include additional vehicle types
 SO THAT I am able to comprehend and work with existing code bases.
 ```
 
-## Acceptance Criteria
+## Usage
 
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted to create a new vehicle or existing vehicle
-THEN I can choose between the two options
-WHEN I am prompted to choose the vehicle type during creation
-THEN I can choose between car, truck, and motorbike
-WHEN I am prompted for details about the vehicle
-THEN I can enter the vehicle information
-WHEN I have entered all the vehicle information
-THEN I can use the created vehicle
-WHEN I select an existing vehicle
-THEN I can use the selected existing vehicle
-WHEN I have created a new vehicle or selected an existing vehicle
-THEN I can perform actions with that vehicle
-WHEN I perform an action with a vehicle
-THEN I see the result of the action in the command-line
-WHEN I complete the process of performing an action
-THEN I can perform additional actions until I choose to exit
-```
 
-## Additional Requirements
+
+## Demonstration Video
+
+## License
 
 This Challenge combines many of the skills covered so far. In addition to the user story and acceptance criteria, we've provided some guidelines to help you get started.
 
