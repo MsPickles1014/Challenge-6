@@ -1,4 +1,4 @@
-# 08 TypeScript and OOP: Vehicle Builder
+# TypeScript and OOP: Vehicle Builder
 
 ## Discription
 
@@ -10,32 +10,35 @@ This project is a Command Line Interface (CLI) application for managing a fleet 
   * Select Vehicles: Choose a vehicle from the existing fleet to perform actions on.
 
   * Perform Actions:
+       - Print details of the selected vehicle.
 
-  * Print details of the selected vehicle.
+       - Start, accelerate, decelerate, and stop vehicles.
 
-  * Start, accelerate, decelerate, and stop vehicles.
+       - Turn vehicles left or right, or put them in reverse.
 
-  * Turn vehicles left or right, or put them in reverse.
-
-  * Perform specific actions like towing (for Trucks) or wheelies (for Motorbikes).
-
+       - Perform specific actions like towing (for Trucks) or wheelies (for Motorbikes).
+         
   * Dynamic Prompts: The CLI dynamically updates based on available vehicles and their capabilities.
 
 ## Installation
   * Prerequisites
-  * Node.js (version 14 or later)
+     - Node.js (version 14 or later)
 
 ## Usage 
 
  * Clone the repository
- * Install dependencies
+ * Install dependencies: Inquirer Package
+     npm install
  * Run the application
+     npm Start 
  * Creating a new vehicle or select an existing vehicle to perform actions
 
 ## Video Walkthrough
-
+https://github.com/MsPickles1014/Challenge-6/blob/main/Develop/assets/video/Dynamic-VehicleBuilder.mp4
 ## License
 MIT
 
-## 📝 Notes
+## Extending the Application
+
+  * add new vehicle types or actions:
 
